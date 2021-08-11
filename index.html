@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proov</title>
+    <style>
+        .h1 {
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.2em;
+        }
+        body {
+             background-color: lightgrey;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Krislyni leht</h1>
+<p style="text-align:center;"><b>NB!</b> Tegemist on eksperimendiga.</p>
+
+<p>Kui soovite olla kursis päevakajaliste uudistega, klikkige <a href="http://www.delfi.ee">siia</a> või klikkige allpool oleval pildil.
+<br>Tegemist on Eesti ühe populaarseima meediaväljaande saidiga.</p>
+
+<div style="text-align: center">
+<a href="http://www.delfi.ee">
+    <img src="delfi.png" alt="Delfi.ee"> 
+</div></a>
+<p>Praegu katsetan ise HTML lehe loomist. Lisasin viite saidile ja samuti pildiga viite. 
+   <br> Pildi asetasin lehekülje keskele, et oleks viisakas vaadata.
+   <br>Muutsin ära fondid ning kasutasin registreerimisvormi loomist. Samuti katsetasin vormis rippmenüüd (vt. Sugu).
+   <br>Muutsin ära ka headerite background colori.
+</p>
+<p>Registreerumiseks on tarvis kasutada allolevat vormi</p>
+
+<style>
+    h1 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1 {
+        background-color:rgb(182, 226, 253);
+    }
+    label {
+    display: inline-block;
+    width:100px;
+    text-align: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    input {
+    display: inline-block;
+    width:100px;
+    text-align: right;
+}
+datalist {
+    display: inline;
+    width:100px;
+    text-align: left;
+}
+
+</style>
+<div style="text-align: center;">
+<h1>Registreeri</h1>
+    <form action="#">
+        <div>
+            <label for="kasutaja">Kasutajanimi</label>
+            <input type="text" id="kasutaja" name="kasutaja">
+        </div>
+        <br>
+        <div>
+            <label for="Salasona">Salasõna</label>
+            <input type="password" id="salasona" name="salasona">
+        </div>
+        <br>
+        <div>
+            <label for="salasona teist korda">Salasõna teist korda</label>
+            <input type="password" id="salasona teist korda" name="salasona teist korda">
+        </div>
+        <br>
+        <div>
+            <label for="Sugu">Sugu</label>
+            <datalist id="Sugu">
+            <input list="Sugu" name="Sugu">
+                 <option value="Mees">
+                 <option value="Naine">
+      </datalist>
+        </div>
+        <label for="checkbox">Nõustun reeglitega</label>
+        <input type="checkbox" name="noustun reeglitega" id="noustun reeglitega">
+        <br>
+        <br>
+        <div style="text-align:center">
+        <input type="submit" value="Registreeru">
+    </div>
+        <br>
+    </form>
+</div>
+</body>
+</html>
